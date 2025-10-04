@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  scroll-padding-top: 70px;
+  margin: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-image: radial-gradient(circle, #001e47, #000000 70%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-bar {
+  z-index: 2;
+  background-color: rgba(10, 25, 47, 0.7);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+
+.text-link {
+  font-size: 2rem;
+}
+
+.skills-section {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  padding: 80px 80px;
+  text-align: center;
+}
+.skills-section h2 {
+  font-size: 6rem;
+}
+.skills-section p {
+  font-size: 2rem;
+  margin: 5rem;
+}
+.skills-section .skills-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.skills-section .skills-container h3 {
+  font-size: 3rem;
+}
+.skills-section .skills-container span {
+  font-size: 2rem;
+}
+
+.work-section {
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  padding: 80px 80px;
+  text-align: center;
+}
+.work-section h2 {
+  font-size: 6rem;
+}
+.work-section p {
+  font-size: 2rem;
+  margin: 5rem;
+}
+.work-section .work-card {
+  margin: 4rem;
+}
+.work-section .work-card h3 {
+  color: #4693ff;
+  font-size: 3rem;
+}
+.work-section .work-card p {
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.edu-section {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  padding: 80px 80px;
+  text-align: center;
+}
+.edu-section h2 {
+  font-size: 6rem;
+}
+.edu-section p {
+  font-size: 2rem;
+  margin: 5rem;
+}
+.edu-section p {
+  font-size: 1rem;
+}
+.edu-section .card-section {
+  display: flex;
+  justify-content: center;
+}
+.edu-section .card-section .card {
+  margin: 1rem;
+}
+
+.star-section {
+  position: relative;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section {
+  background-color: white;
+  color: black;
+  padding: 80px 80px;
+  text-align: center;
+}
+.about-section h2 {
+  font-size: 6rem;
+}
+.about-section p {
+  font-size: 2rem;
+  margin: 5rem;
+}
+.about-section img {
+  width: 15rem;
+}
+
+.star-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.star-content h1 {
+  font-size: 6rem;
+}
+.star-content h2 {
+  color: #4693ff;
+}
+
+.stars-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  z-index: 0;
+}
+
+.stars-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.stars, .stars2, .stars3 {
+  width: 100%;
+  min-height: 100%;
+}
+
+.stars {
+  background-image: radial-gradient(1px 1px at 20px 30px, #b5b5b5, transparent), radial-gradient(1px 1px at 40px 70px, #ffffff, transparent), radial-gradient(1px 1px at 50px 160px, #dfdfdf, transparent), radial-gradient(1px 1px at 90px 40px, #ffffff, transparent), radial-gradient(2px 2px at 160px 120px, #dfdfdf, transparent);
+  background-size: 200px 200px;
+}
+
+.stars2 {
+  background-image: radial-gradient(2px 2px at 30px 90px, #ffffff, transparent), radial-gradient(2px 2px at 80px 20px, #dfdfdf, transparent), radial-gradient(2px 2px at 130px 140px, #ffffff, transparent);
+  background-size: 250px 250px;
+}
+
+.stars3 {
+  background-image: radial-gradient(3px 3px at 50px 50px, #ffffff, transparent), radial-gradient(3px 3px at 100px 180px, #dfdfdf, transparent), radial-gradient(3px 3px at 180px 100px, #ffffff, transparent);
+  background-size: 300px 300px;
+}
+
+#stars-wrapper-1 {
+  animation: move-stars 100s linear infinite;
+}
+
+#stars-wrapper-2 {
+  animation: move-stars 60s linear infinite;
+}
+
+#stars-wrapper-3 {
+  animation: move-stars 35s linear infinite;
+}
+
+@keyframes move-stars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}/*# sourceMappingURL=style.css.map */
